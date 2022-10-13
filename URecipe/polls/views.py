@@ -17,7 +17,9 @@ def my_recipe(request):
         context['heading_card'] = "Recipes you may like.."
         redirect('/home/')
 
-
+def rndm(request,nme):
+    return redirect('/home/')
+        
 def home(request):
     context = {}
     if request.method == "POST":
